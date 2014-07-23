@@ -26,11 +26,11 @@ int main (){
 
 
 	cout<<"What is the person's name? ";
-	cin >> name; 
+	getline(cin, name);
 	cout<<"Boy or Girl? ";
-	cin>> gender;
+	getline(cin, gender);
 	cout<< "Name of Class ";
-	cin >> class1; 
+	getline(cin, class1);
 
 
 	//Phrases
