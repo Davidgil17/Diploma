@@ -60,7 +60,8 @@ int main (){
 	(string)((gender == "Boy")? "He " : "She ") + "had a creative and advanced vision for "+ (string)((gender == "Boy")? "his " : "her ") + "project and was able to fulfill " + (string)((gender == "Boy")? "his " : "her ")+ " goals for the final project.",
 	name+"'s deep interest in " + class1+ " was reflected through the imaginative projects "+(string)((gender == "Boy")? "he " : "she ")+ "created.",
 	(string)((gender == "Boy")? "He " : "She ") + "always asks well thought out questions that are informative to the entire class.",
-	name+" is extremely lively and has contributed a high level of cheerfulness to the class."};
+	name+" is extremely lively and has contributed a high level of cheerfulness to the class.",
+	"I am proud to name " + name + " as one of my students this week."};
 
 	int numsUsed[5];
 
@@ -68,14 +69,14 @@ int main (){
 	for(int i = 0 ; i < 5; i++){
 		int a = rand()%28;
 		if(contains(numsUsed, a) == false){
-		numsUsed[i]= a;
-		paragraph += phrase[a];
-		paragraph += " ";
-	}
-	else
-	{
-		i--;
-	}
+			numsUsed[i]= a;
+			paragraph += phrase[a];
+			paragraph += " ";
+		}
+		else
+		{
+			i--;
+		}
 	}
 
 	cout<< paragraph;
