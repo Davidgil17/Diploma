@@ -34,7 +34,6 @@ int main (){
 	cout << "----------------------------------------------------------" << endl;
 	
 
-<<<<<<< HEAD
 	for(int k = 0; k < num ; k++){
 		cout << endl;
 		cout << "Person #" << (k+1) << ":" << endl << endl;
@@ -50,21 +49,12 @@ int main (){
 	}
 	
 	cout << "Generated Diplomas For " << class1 << ":" << endl << endl;
-=======
-	cout<<"What is the person's name? ";
-	getline(cin, name);
-	cout<<"Boy or Girl? ";
-	getline(cin, gender);
-	cout<< "Name of Class ";
-	getline(cin, class1);
->>>>>>> 25a01bc540cf1ca12e8519cd4c46f9a04c8ef5bb
 
  	for(int k = 0 ; k < num ; k++){
 		srand(time(0));
 		paragraph = "";
 
 	//Phrases
-<<<<<<< HEAD
 	string phrase[40] =  {
 	/* Phrase 1 */ name[k] + " was not only a joy but a privilage to have " + (string)((gender[k] == "Boy")? "him " : "her ")+ " in class.",
 	/* Phrase 2 */ (string)((gender[k] == "Boy")? "He " : "She ") + "showed great improvement throughout the week.",
@@ -106,43 +96,10 @@ int main (){
 	/* Phrase 39 */ name[k] + " is both kind and curtious in and out of the classroom; making "+(string)((gender[k] == "Boy")? "His " : "her ")+"a pleasure to work with.",
 	/* Phrase 39 */ name[k] + " is good humored and is always making others laugh even during challenges.",
 	/* Phrase 40 */ (string)((gender[k] == "Boy")? "He " : "She ")+ "is extremely intellegent and is always sharing "+(string)((gender[k] == "Boy")? "his " : "her ") + "knowledge with the rest of the class."};
-=======
-	string phrase[28] =  {name + " was a joy to have in class.",
-	(string)((gender == "Boy")? "He " : "She ") + "showed great improvement throughout the week.",
-	name + "'s prowess in " + class1 + " has proven to be beyond the scope of this course.",
-	name + " was incredibly energetic. " + ((gender == "Boy")? "His " : "Her ") + "energy made teaching a pleasure, and brightened up the class.",
-	name + "'s project turned into a very creative masterpiece.",
-	(string)((gender == "Boy")? "He " : "She ") + " used several innovative ideas to produce a project the likes of which I have never seen.",
-	"Your profeciency in " + class1 + " was demonstrated through the complexity of your final project.",
-	name+ " should be proud of all that "+ ((gender == "Boy")? "he " : "she ") + "has accomplished this week.",
-	name+ "'s hardwork resulted in a intricate and advanced final project.",
-	name+ " grasped the concepts with ease and was always willing to help others.",
-	(string)((gender == "Boy")? "He " : "She ") + "stayed on task and balanced inividual achievement with that of the entire class.",
-	(string)((gender == "Boy")? "He " : "She ") + "has passion for " + class1,
-	(string)((gender == "Boy")? "He " : "She ") + "uses class time constructively and completes assignments in a timely manner.",
-	(string)((gender == "Boy")? "He " : "She ") + "actively participates in group dicussions and engages the entire class.",
-	(string)((gender == "Boy")? "He " : "She ") + "comes to class each day with a positive attitude.",
-	(string)((gender == "Boy")? "He " : "She ") + "is self-motivated, allowing " + (string)((gender == "Boy")? "him " : "her ") + "to create high quality projects.",
-	"Through the course of the week " + (string)((gender == "Boy")? "he " : "she ") + "mastered "+ class1 + ".",
-	(string)((gender == "Boy")? "He " : "She ") + "made stronger connections with "+(string)((gender == "Boy")? "his " : "her ")+ "peers in and out of the classroom.",
-	(string)((gender == "Boy")? "He " : "She ") + "is a fast learner and shows consistant perseverence.",
-	name + " has been a caring rolemodel for younger students and is adored by all "+ (string)((gender == "Boy")? "his " : "her ")+ "peers.",
-	name + " treats others with respect and displays a high level of maturity.",
-	name + " is self-disciplined and avoids most if not all careless errors.",
-	"I truly and sincerely hope that "+ name+ " continues with " + class1+ " throughout "+(string)((gender == "Boy")? "his " : "her ")+ "lifetime.",
-	(string)((gender == "Boy")? "He " : "She ") + "had a creative and advanced vision for "+ (string)((gender == "Boy")? "his " : "her ") + "project and was able to fulfill " + (string)((gender == "Boy")? "his " : "her ")+ " goals for the final project.",
-	name+"'s deep interest in " + class1+ " was reflected through the imaginative projects "+(string)((gender == "Boy")? "he " : "she ")+ "created.",
-	(string)((gender == "Boy")? "He " : "She ") + "always asks well thought out questions that are informative to the entire class.",
-	name+" is extremely lively and has contributed a high level of cheerfulness to the class.",
-	"I am proud to name " + name + " as one of my students this week."};
-
-	int numsUsed[5];
->>>>>>> 25a01bc540cf1ca12e8519cd4c46f9a04c8ef5bb
 
 	
 		cout<<"Diploma #" << k+1 << ":" << " (" << name[k] << ")" << endl << endl;
 
-<<<<<<< HEAD
 		for(int i = 0 ; i < 5; i++){
 			int a = rand()%40;
 			if(contains(numsUsed, a) == false){
@@ -155,19 +112,6 @@ int main (){
 			{
 				i--;
 			}
-=======
-	for(int i = 0 ; i < 5; i++){
-		int a = rand()%28;
-		if(contains(numsUsed, a) == false){
-			numsUsed[i]= a;
-			paragraph += phrase[a];
-			paragraph += " ";
-		}
-		else
-		{
-			i--;
-		}
->>>>>>> 25a01bc540cf1ca12e8519cd4c46f9a04c8ef5bb
 	}
 
 	cout << paragraph << endl << endl << "----------------------------------------------------------" << endl;
