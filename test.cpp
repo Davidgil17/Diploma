@@ -12,16 +12,6 @@ string class1 = "";
 string paragraph = "";
 int h = 0;
 
-bool contains(int x[40], int y){
-	for(int i = 0 ; i < 40; i ++){
-		if(x[i]==y){
-			return true;
-		}
-		
-	}
-	return false;
-}
-
 void knuthSample(int numSamples, int resultMax, int* results) {
 	int N = resultMax;
 	int M = numSamples;
